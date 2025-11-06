@@ -1,0 +1,261 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Aaheli Das — Biomedical Engineering Portfolio</title>
+  <meta name="description" content="Projects and experience of Aaheli Das — Biomedical Engineering (SJSU)." />
+  <meta name="color-scheme" content="dark light" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg: #0b1020; --card:#121933; --muted:#a7b0d1; --text:#e8ecff; --accent:#7aa2ff; --accent-2:#9ef0a1; --ring:#2b3a6b;
+      --shadow: 0 10px 30px rgba(0,0,0,.35);
+    }
+    @media (prefers-color-scheme: light){
+      :root{ --bg:#f7f9ff; --card:#ffffff; --muted:#475072; --text:#10162f; --accent:#2a62ff; --accent-2:#0da86e; --ring:#dfe7ff; }
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;height:100%;font-family:Inter,system-ui,Segoe UI,Roboto,Arial,sans-serif;color:var(--text);background:radial-gradient(1200px 600px at 120% -10%, rgba(122,162,255,.18), transparent 60%),
+      radial-gradient(900px 400px at -20% 10%, rgba(158,240,161,.15), transparent 55%), var(--bg);}
+    a{color:var(--accent);text-decoration:none}
+    a:hover{text-decoration:underline}
+    .container{max-width:1100px;margin:auto;padding:28px}
+    header{display:flex;gap:24px;align-items:center;justify-content:space-between;flex-wrap:wrap}
+    .brand{display:flex;gap:16px;align-items:center}
+    .avatar{width:54px;height:54px;border-radius:14px;background:linear-gradient(135deg,var(--accent),var(--accent-2));box-shadow:var(--shadow)}
+    h1{font-size:1.6rem;margin:.2rem 0}
+    .tagline{color:var(--muted);font-weight:500}
+    nav{display:flex;gap:16px;flex-wrap:wrap}
+    nav a{padding:10px 14px;border-radius:12px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.08)}
+    nav a:hover{background:rgba(255,255,255,.12)}
+    .grid{display:grid;grid-template-columns:repeat(12,1fr);gap:20px;margin-top:26px}
+    .card{grid-column:span 12;background:linear-gradient(180deg,rgba(255,255,255,.06),rgba(255,255,255,.02));backdrop-filter:saturate(125%);
+      border:1px solid rgba(255,255,255,.08);border-radius:18px;box-shadow:var(--shadow);padding:22px}
+    @media(min-width:900px){.half{grid-column:span 6}.third{grid-column:span 4}}
+    h2{margin:.2rem 0 1rem 0;font-size:1.3rem}
+    .muted{color:var(--muted)}
+    .chips{display:flex;flex-wrap:wrap;gap:10px}
+    .chip{padding:8px 12px;border-radius:999px;border:1px solid var(--ring);color:var(--muted);background:rgba(255,255,255,.04)}
+    .list{display:flex;flex-direction:column;gap:14px}
+    .item{padding:14px;border-radius:14px;border:1px solid rgba(255,255,255,.08);background:rgba(0,0,0,.1)}
+    .item h3{margin:.2rem 0}
+    .meta{font-size:.94rem;color:var(--muted)}
+    .row{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+    .btn{display:inline-flex;align-items:center;gap:10px;padding:10px 14px;border-radius:12px;border:1px solid var(--ring);background:rgba(255,255,255,.04)}
+    .btn:hover{transform:translateY(-1px)}
+    footer{margin:36px 0;color:var(--muted);text-align:center}
+    .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+    .pill{display:inline-block;padding:6px 10px;border:1px solid var(--ring);border-radius:10px;background:rgba(255,255,255,.04);margin-right:6px}
+    .timeline{position:relative}
+    .timeline::before{content:"";position:absolute;left:9px;top:0;bottom:0;width:2px;background:linear-gradient(var(--ring),transparent)}
+    .t-item{position:relative;padding-left:28px;margin:14px 0}
+    .t-item::before{content:"";position:absolute;left:3px;top:.45rem;width:12px;height:12px;border-radius:50%;background:var(--accent);box-shadow:0 0 0 4px rgba(122,162,255,.18)}
+    code{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.08);padding:2px 6px;border-radius:6px}
+  </style>
+</head>
+<body>
+  <a class="sr-only" href="#content">Skip to content</a>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="avatar" aria-hidden="true"></div>
+        <div>
+          <h1>Aaheli Das</h1>
+          <div class="tagline">Biomedical Engineering @ SJSU • Projects, research, and conference leadership</div>
+        </div>
+      </div>
+      <nav>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main id="content" class="grid">
+      <!-- Intro / About -->
+      <section class="card half" aria-labelledby="about-h2">
+        <h2 id="about-h2">About</h2>
+        <p class="muted">I build practical bioengineering systems and tools—from organ‑on‑chip simulations and sensing to device design and student leadership. I'm currently pursuing an M.S. in Biomedical Engineering at San José State University (focus: robotic hip exoskeleton).</p>
+        <div class="row" style="margin-top:12px">
+          <a class="btn" href="mailto:aaheli.das2003@gmail.com">Email</a>
+          <a class="btn" href="https://www.linkedin.com/in/aaheli-das-990247265/" target="_blank" rel="noopener">LinkedIn</a>
+          <a class="btn" id="dlResume" download>Download Résumé</a>
+        </div>
+      </section>
+
+      <!-- Highlights -->
+      <section class="card half" aria-labelledby="highlights-h2">
+        <h2 id="highlights-h2">Highlights</h2>
+        <div class="chips" id="highlights"></div>
+      </section>
+
+      <!-- Projects -->
+      <section class="card" id="projects" aria-labelledby="projects-h2">
+        <h2 id="projects-h2">Projects</h2>
+        <div class="list" id="projectList"></div>
+      </section>
+
+      <!-- Experience -->
+      <section class="card" id="experience" aria-labelledby="exp-h2">
+        <h2 id="exp-h2">Experience</h2>
+        <div class="timeline" id="expList"></div>
+      </section>
+
+      <!-- Skills -->
+      <section class="card" id="skills" aria-labelledby="skills-h2">
+        <h2 id="skills-h2">Skills</h2>
+        <div class="chips" id="skillChips"></div>
+      </section>
+
+      <!-- Contact -->
+      <section class="card" id="contact" aria-labelledby="contact-h2">
+        <h2 id="contact-h2">Contact</h2>
+        <p class="muted">Open to collaboration and research opportunities.</p>
+        <div class="row">
+          <a class="btn" href="mailto:aaheli.das2003@gmail.com">aaheli.das2003@gmail.com</a>
+          <a class="btn" href="https://www.linkedin.com/in/aaheli-das-990247265/" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <small>© <span id="year"></span> Aaheli Das • Built with vanilla HTML/CSS/JS. Host on GitHub Pages.</small>
+    </footer>
+  </div>
+
+  <script>
+    // ---- Editable data (update this to keep site current) ----
+    const DATA = {
+      resumeUrl: 'resume.pdf', // drop your PDF as resume.pdf in the same repo
+      highlights: [
+        'M.S. Biomedical Engineering (Robotic Hip Exoskeleton focus)',
+        'VP, Bay Area Biomedical Device Conference (record attendance, revenue growth)',
+        'BMES Mentorship Chair (program design & launch)'
+      ],
+      projects: [
+        {
+          title: 'Prosthetic Device Redesign',
+          org: 'Mechanical Engineering Lab, SJSU',
+          when: '2025',
+          summary: 'Improved an existing prosthetic for usability and at‑home transport; design for enhanced gait support.',
+          tags: ['Device Design','Usability','Biomechanics'],
+          links: []
+        },
+        {
+          title: 'Kidney Organoid‑on‑a‑Chip (COMSOL)',
+          org: 'School Projects, SJSU',
+          when: '2024',
+          summary: 'Simulated microfluidic shear stress distribution to optimize organoid viability and function.',
+          tags: ['COMSOL','Microfluidics','Modeling'],
+          links: []
+        },
+        {
+          title: 'Emotion‑Aware Heart‑Rate Sensor',
+          org: 'School Projects, SJSU',
+          when: '2024',
+          summary: 'Built and coded a Raspberry Pi heart‑rate sensor in Python; detected BPM changes from emotional stimuli.',
+          tags: ['Raspberry Pi','Python','Signal Processing'],
+          links: []
+        },
+        {
+          title: 'Blood Degassing Schematic & Artificial Valve',
+          org: 'Cardiovascular Research Lab, SJSU',
+          when: '2024–2025',
+          summary: 'Designed a pre‑instrument degassing schematic; prototyped a reduced‑thrombogenicity artificial valve.',
+          tags: ['Cardio Devices','CAD','Wet Lab'],
+          links: []
+        }
+      ],
+      experience: [
+        {
+          role: 'Mentorship Chair', org: 'Biomedical Engineering Society (BMES)', when: 'Jun 2025 – Present',
+          bullets: [
+            'Designed & launched mentorship program pairing upper‑ and underclassmen',
+            'Built incentives & recognition to sustain engagement',
+            'Planned events that strengthened community'
+          ]
+        },
+        {
+          role: 'Vice President (Conference)', org: 'Bay Area Biomedical Device Conference', when: 'Jun 2024 – May 2025',
+          bullets: [
+            'Directed 50+ leads/volunteers; venue, catering, seating, parking for 200+ attendees',
+            'Moderated 12+ speaker sessions; matched resumes to hiring teams',
+            'Achieved record attendance and revenue growth'
+          ]
+        },
+        {
+          role: 'Engineering Intern', org: 'MEDFREE Inc.', when: 'Jun 2024 – Aug 2024',
+          bullets: [
+            'Hands‑on device build, testing, troubleshooting; compliant documentation',
+            'Aligned cross‑functionally on deliverables & timelines; managed inventory',
+            'Coordinated vendors for materials & technical needs'
+          ]
+        }
+      ],
+      skills: [
+        'SolidWorks','Fusion 360','AutoCAD','ImageJ','Minitab','LTspice','COMSOL','Pandas','MATLAB',
+        'Python','Java','SQL','C++','NetLogo','Raspberry Pi','Instron','Oscilloscope','3D Printing'
+      ]
+    };
+
+    // ---- Renderers ----
+    const $ = s => document.querySelector(s);
+    const el = (tag, opts={}) => Object.assign(document.createElement(tag), opts);
+
+    function renderHighlights(){
+      const wrap = $('#highlights');
+      DATA.highlights.forEach(h => wrap.append(el('span',{className:'chip',textContent:h})));
+    }
+
+    function renderProjects(){
+      const list = $('#projectList');
+      DATA.projects.forEach(p => {
+        const card = el('div',{className:'item'});
+        const title = el('h3',{textContent:p.title});
+        const meta = el('div',{className:'meta',textContent:`${p.org} • ${p.when}`});
+        const sum = el('p',{textContent:p.summary});
+        const chipRow = el('div',{className:'chips'});
+        p.tags.forEach(t => chipRow.append(el('span',{className:'pill',textContent:t})));
+        const linkRow = el('div',{className:'row'});
+        (p.links||[]).forEach(l => linkRow.append(el('a',{className:'btn',href:l.href,target:'_blank',rel:'noopener',textContent:l.label||'Link'})));
+        card.append(title, meta, sum, chipRow, linkRow);
+        list.append(card);
+      });
+    }
+
+    function renderExperience(){
+      const list = $('#expList');
+      DATA.experience.forEach(e => {
+        const item = el('div',{className:'t-item'});
+        const heading = el('h3',{textContent:`${e.role} — ${e.org}`});
+        const meta = el('div',{className:'meta',textContent:e.when});
+        const ul = el('ul');
+        e.bullets.forEach(b => ul.append(el('li',{textContent:b})));
+        item.append(heading, meta, ul);
+        list.append(item);
+      });
+    }
+
+    function renderSkills(){
+      const chips = $('#skillChips');
+      DATA.skills.forEach(s => chips.append(el('span',{className:'chip',textContent:s})));
+    }
+
+    function wireBasics(){
+      $('#year').textContent = new Date().getFullYear();
+      const dl = document.getElementById('dlResume');
+      dl.href = DATA.resumeUrl;
+    }
+
+    renderHighlights();
+    renderProjects();
+    renderExperience();
+    renderSkills();
+    wireBasics();
+  </script>
+</body>
+</html>
